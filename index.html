@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="main-container">
+    <div class="header">
+        <h1>Password Generator</h1>
+    </div>
+    <div class="wrapper">
+      
+        <div class="password-input">
+            <input type="text" id="pass-bar">
+        </div>
+        <div class="strength-bar" id=""></div>
+        <div class="password-length">
+            <div class="detail">
+            <label for="length-bar">Password Length</label>
+            <span id="slider-value">15</span>
+
+        </div>    
+       
+    </div>
+    <input type="range" id="length-bar" max="30">
+    <div class="password-setting">
+       <label >Password Setting</label>
+       <ul>
+        <li  ><label for="lowercase">Lowercase(a-z)</label>
+            <input class="eles" id="lowercase" type="checkbox" checked>
+        </li>
+        <li ><label for="uppercase">Uppercase(A-Z)</label>
+            <input class="eles" type="checkbox"  id="uppercase" >
+        </li>
+       
+        <li><label for="numbers">Number(0-9)</label>
+            <input class="eles" id="numbers" type="checkbox">
+        </li>
+        <li><label for="symbols">Symbols(&*X%)</label>
+            <input class="eles" type="checkbox"  id="symbols">
+        </li>
+        <li><label for="exclude-duplicate">Exclude Duplicate</label>
+            <input type="checkbox" id="exclude-duplicate">
+        </li>
+        <li><label for="include-space">Include Space</label>
+            <input  class="eles" type="checkbox" id="include_space">
+        </li>
+       </ul>
+    </div>
+    <button id="generate-btn">Generate Password</button>
+    </div>
+   </div>
+</body>
+<script src="script.js"></script>
+</html>
